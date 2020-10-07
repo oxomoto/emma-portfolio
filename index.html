@@ -7,25 +7,28 @@
     <title>Emma Beal</title>
 
     <meta name="description" content="Emma Beal is an illustrator in Brussels.">
-    <meta name="keywords" content="illustration,drawing,emma beal">
+    <meta name="keywords" content="illustration, drawing, Emma Beal">
+    <meta name="keywords" content="illustration, drawing, painting">
+    <meta name="author" content="Emma Beal">
 
     <link rel="icon" href="favicon.png" sizes="48x48" type="image/png">
     <link rel="stylesheet" href="style.css">
-    <script src="js/hellbox.js"></script>
+    <script src="hellbox.js"></script>
+    <script src="lozad.min.js"></script>
 </head>
 
 <!--                                                                            
 NONONONONONONONON!-->
 
 
-<body>
+<body id="a">
     <header>
         <div>
             <a href="/index.html">
                 <h1>EMMA BEAL</h1>
             </a>
-            <a href="mailto:emma.k.beal@gmail.com">
-                <p>emma.k.beal@gmail.com</p>
+            <a href="mailto:info@emmabeal.be">
+                <p>info@emmabeal.be</p>
             </a>
 
         </div>
@@ -37,25 +40,48 @@ NONONONONONONONON!-->
 
         <div id="desc">
             <p>Emma Beal was born in Brighton, England where she spent her early years and comes from a German and American background. She later moved to France and then to Belgium where she studied at the Academie des Beaux-Arts in Tournai, receiving a bachelor's in fine arts. Her work has been shortlisted in competition at The Royal Academy of Arts in London. She now lives in Brussels where she continues to create and share her art.</p>
-
         </div>
-        <button onclick="myFunction()">◑</button>
 
     </header>
 
+
     <section class="work">
-
-
         <div>
-            <a href="img/household.JPG" class="hellbox"><img style="" src="img/household.JPG"></a>
+            <a href="img/household.JPG" class="hellbox">
+                <img class="lozad" alt="Painting of Emma & Marius on the sofa" data-src="img/household.JPG" src="img/household_tiny.JPG">
+            </a>
             <figcaption>
-                <p>THE HOUSEHOLD<br><span class="ita"> Acrylic on paper,<br> 100 × 150cm, 2020 </span></p>
+                <p>THE HOUSEHOLD<br><span class="ita"> Acrylic on paper,<br> 100&#160;×&#160;150cm, 2020 </span></p>
             </figcaption>
         </div>
 
+        <div>
+            <a href="img/PORTRAIT1.jpg" class="hellbox">
+                <img class="lozad" alt="Portrait Emma" data-src="img/PORTRAIT1.jpg" src="img/PORTRAIT1_tiny.jpg">
+            </a>
+            <figcaption class="pad">
+                <p>AUTOPORTRAIT<br><span class="ita"> pastel and pencil,<br>21&#160;×&#160;31cm, 2020</span></p>
+            </figcaption>
+
+            <a href="img/PORTRAIT2.jpg" class="hellbox">
+                <img class="lozad" alt="Portrait Marius" data-src="img/PORTRAIT2.jpg" src="img/PORTRAIT2_tiny.jpg">
+            </a>
+            <figcaption class="pad">
+                <p>MARIUS<br><span class="ita"> charcoal and graphite pencil,<br>21&#160;×&#160;29.6cm, 2020</span></p>
+            </figcaption>
+
+            <a href="img/PORTRAIT3.jpg" class="hellbox">
+                <img class="lozad" alt="Portrait Lorenzo" data-src="img/PORTRAIT3.jpg" src="img/PORTRAIT3_tiny.jpg">
+            </a>
+            <figcaption>
+                <p>LORENZO<br><span class="ita"> charcoal and graphite pencil,<br>21&#160;×&#160;29.6cm, 2020</span></p>
+            </figcaption>
+        </div>
 
         <div>
-            <a href="img/embrace1.jpg" class="hellbox"> <img style="" src="img/embrace1.jpg"></a>
+            <a href="img/embrace1.jpg" class="hellbox">
+                <img class="lozad" alt="2 people embracing eachother" data-src="img/embrace1.jpg" src="img/embrace1_tiny.jpg">
+            </a>
             <figcaption class="pad">
                 <p>UNTITLED<br><span class="ita"> pastel and pencil,<br> 2020</span></p>
             </figcaption>
@@ -65,79 +91,69 @@ NONONONONONONONON!-->
             </figcaption>
         </div>
 
+        <div>
+            <a href="img/Anatomy2%20EBeal1.jpg" class="hellbox">
+                <img class="lozad" alt="8 people observing a halfnaked body" data-src="img/Anatomy2%20EBeal1.jpg" src="img/Anatomy2%20EBeal1_tiny.jpg">
+            </a>
+            <figcaption class="pad">
+                <p>THE ANATOMY LESSON <br><span class="ita"> charcoal and graphite pencil,<br>124&#160;×&#160;186cm, 2017</span></p>
+            </figcaption>
 
-        <div> <a><span class="ok"></span> <img src="img/MORNING1.jpg"></a>
+        </div>
+
+        <div>
+            <a href="img/Supper2%20EBeal1.jpg" class="hellbox">
+                <img class="lozad" alt="group of people having supper at a table" data-src="img/Supper2%20EBeal1.jpg" src="img/Supper2%20EBeal1_tiny.jpg">
+            </a>
+            <figcaption>
+                <p>SUPPER AT EMMAUS<br><span class="ita"> charcoal and graphite pencil,<br>124&#160;×&#160;185cm, 2017</span></p>
+            </figcaption>
+        </div>
+
+        <div>
+            <a href="img/MORNING1.jpg" class="hellbox">
+                <img class="lozad" alt="someone putting on socks" data-src="img/MORNING1.jpg" src="img/MORNING1_tiny.jpg">
+            </a>
             <figcaption class="pad">
                 <p>MORNING 3/3<br><span class="ita"> pastel and pencil,<br> 2020</span></p>
             </figcaption>
-            <a><span class="ok"></span> <img src="img/MORNING2.jpg"></a>
+            <a href="img/MORNING2.jpg" class="hellbox">
+                <img class="lozad" alt="person in bed waking up" data-src="img/MORNING2.jpg" src="img/MORNING2_tiny.jpg">
+            </a>
             <figcaption class="pad">
                 <p>MORNING 2/3<br><span class="ita"> pastel and pencil,<br> 2020</span></p>
             </figcaption>
-            <a><span class="ok"></span> <img src="img/MORNING3.jpg"></a>
+            <a href="img/MORNING3.jpg" class="hellbox">
+                <img class="lozad" alt="peeling an orange at breakfast" data-src="img/MORNING3.jpg" src="img/MORNING3_tiny.jpg">
+            </a>
             <figcaption>
                 <p>MORNING 1/3<br><span class="ita"> pastel and pencil,<br> 2020</span></p>
             </figcaption>
         </div>
 
-
-
         <div>
-            <a><span class="ok"></span> <img src="img/PORTRAIT1.jpg"></a>
+            <a href="img/The%20card%20game.jpg" class="hellbox">
+                <img class="lozad" alt="3 people playing a card game" data-src="img/The%20card%20game.jpg" src="img/The%20card%20game_tiny.jpg">
+            </a>
             <figcaption class="pad">
-                <p>AUTOPORTRAIT<br><span class="ita"> pastel and pencil,<br>21 × 31cm, 2020</span></p>
+                <p>THE CARD GAME<br><span class="ita"> charcoal and graphite pencil,<br>104&#160;×&#160;155cm, 2017</span></p>
             </figcaption>
 
-            <a><span class="ok"></span> <img src="img/PORTRAIT2.jpg"></a>
-            <figcaption class="pad">
-                <p>MARIUS<br><span class="ita"> charcoal and graphite pencil,<br>21 × 29,6cm, 2020</span></p>
-            </figcaption>
-
-            <a><span class="ok"></span> <img src="img/PORTRAIT3.jpg"></a>
+            <a href="img/The%20drunk.jpg" class="hellbox">
+                <img class="lozad" alt="a sleeping drunk with 3 people around him" data-src="img/The%20drunk.jpg" src="img/The%20drunk_tiny.jpg">
+            </a>
             <figcaption>
-                <p>LORENZO<br><span class="ita"> charcoal and graphite pencil,<br>21 × 29,6cm, 2020</span></p>
-            </figcaption>
-        </div>
-
-        <div>
-            <a href="img/Anatomy2%20EBeal1.jpg" class="hellbox"><img style="" src="img/Anatomy2%20EBeal1.jpg"></a>
-            <figcaption class="pad">
-                <p>THE ANATOMY LESSON <br><span class="ita"> charcoal and graphite pencil,<br>124 × 186cm, 2017</span></p>
-            </figcaption>
-
-            <a><span class="ok"></span> <img src="img/The%20drunk.jpg"></a>
-            <figcaption>
-                <p>THE DRUNK<br><span class="ita"> charcoal and graphite pencil,<br>200 × 126cm, 2018</span></p>
-            </figcaption>
-
-        </div>
-
-        <div>
-            <a><span class="ok"></span> <img src="img/Supper2%20EBeal1.jpg"></a>
-            <figcaption>
-                <p>SUPPER AT EMMAUS<br><span class="ita"> charcoal and graphite pencil,<br>124 × 185cm, 2017</span></p>
-            </figcaption>
-        </div>
-
-
-
-        <div>
-            <a><span class="ok"></span> <img src="img/The%20card%20game.jpg"></a>
-            <figcaption>
-                <p>THE CARD GAME<br><span class="ita"> charcoal and graphite pencil,<br>104 × 155cm, 2017</span></p>
+                <p>THE DRUNK<br><span class="ita"> charcoal and graphite pencil,<br>200&#160;×&#160;126cm, 2018</span></p>
             </figcaption>
         </div>
 
     </section>
 
-
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
-
-    </script>
 </body>
+<script>
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+
+</script>
 
 </html>

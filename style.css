@@ -2,28 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+/* fonts */
+@font-face {
+    font-family: 'libre_baskervilleitalic';
+    src: url('/fonts/librebaskerville-italic-webfont.woff2') format('woff2'),
+        url('/fonts/librebaskerville-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('/fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+        url('/fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Standard';
+    src: url('/fonts/standard-book-webfont.woff2') format("woff2"),
+        url('/fonts/standard-book-webfont.woff') format("woff");
 }
 
 body {
     display: flex;
-    font-family: "Standard", sans-serif;
+    font-family: 'Standard', sans-serif;
     flex-direction: column;
     font-size: 1rem;
     margin: 20px;
 }
 
-button {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 40px;
+header {
+    display: flex;
+}
 
+header div {
+    flex: 0 0 25%;
 }
 
 h1,
 h2 {
-    font-family: "Libre Baskerville", serif;
+    font-family: 'libre_baskervilleregular', serif;
     font-size: 1rem;
 }
 
@@ -43,99 +66,67 @@ img {
     height: auto;
 }
 
-
-header {
-    display: flex;
-}
-
-header div {
-    flex: 0 0 25%;
-}
-
 #ab {
     flex: 0 0 10%;
 }
 
 #desc {
     flex: 1;
+    line-height: 1.2;
+    padding-right: 10px;
 
 }
 
-header p,
 .extra p {
-    font-family: "Libre Baskerville", serif;
-    font-style: italic;
+    font-family: 'libre_baskervilleregular', serif;
+    padding-bottom: 0.2em;
+}
+
+header p,
+.ita {
+    font-family: 'libre_baskervilleitalic', serif;
 }
 
 
 figcaption {
     font-size: 0.9rem;
-    padding-right: 4em;
+    padding-right: 3em;
 }
 
 .pad {
     padding-left: 20px;
-
 }
 
-
-
-.ita {
-    font-family: "Libre Baskerville", serif;
-}
 
 section.work {
-    padding-top: 4rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
 }
-
-
 
 section.work div {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    padding-top: 20px;
-
+    padding-bottom: 40px;
 }
 
 .extra {
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    padding-top: 4rem;
 }
-
-.extra div {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
-}
-
-.extra div div {
-    display: flex;
-    flex: 0 0 35%;
-    flex-direction: column;
-}
-
-.extra h2 {
-    font-family: "Standard", sans-serif;
-    font-size: 0.9em;
-    font-weight: 400;
-}
-
-
 
 
 footer {
     font-size: 0.8em;
     color: #363636;
-    padding-top: 1em;
+    padding: 20px;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
-    margin: 1.5em;
+
 }
 
 .label:after {
@@ -146,7 +137,7 @@ footer {
     content: ' Made with ♡.';
 }
 
-@media(max-width: 600px) {
+@media(max-width: 900px) {
 
     header {
         flex-direction: column;
@@ -160,9 +151,6 @@ footer {
         position: inherit;
         width: 88vw;
     }
-
-
-
 
 
     section.work div {
@@ -179,6 +167,19 @@ footer {
         max-width: 800px;
     }
 
-    button {
-        display: none;
+    .pad,
+    .extra div {
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .extra {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 4rem;
+    }
+
+    footer {
+        position: relative;
+        padding: 0;
     }
